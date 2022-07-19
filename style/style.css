@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+body {
+    min-height: 1000px;
+}
+
+/* Home Page */
+.homePage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assests/background2.jpg);
+    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) */background-size: cover;
+    background-position: center;
+
+}
+
+.homePage .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.homePage .content h2 {
+    font-size: 5em;
+    /* color: #F29222; */
+    color: #f16634;
+}
+
+.homePage .content h2 span {
+    color: #F29222;
+    font-size: 90px;
+}
+
+.homePage .content p {
+    font-size: 21px;
+    color: #fff;
+}
+
+.homePage .content .btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #f16634;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.homePage .content .btn:hover {
+    letter-spacing: 6px;
+}
+
+/* header / navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background-color: #F29222;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+header img {
+    height: 50px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+}
+header .navigation li a:hover {
+    color: #F29222;
+    transition: 0.5s;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+    
+header.sticky .navigation li a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* About US */
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    position: relative;
+    width: 48%;
+}
+
+.title-text {
+    color: #111;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.row .col .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*  program */
+.program .title-program {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.program .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.program .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 30%);
+}
+
+.program .content .box .imgbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.program .content .box .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program .content .box .text {
+    padding: 15px 0 15px;
+}
+
+.program .content .box .text h3 {
+    color: #111;
+    text-align: centers;
+    font-weight: 700;
+}
+
+.program .title-program .btn {
+    font-size: 1em;
+    color: #fff;
+    background-color: #f16634;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.program .title-program .btn:hover {
+    letter-spacing: 6px;
+}
+
+/* Footer */
+.copyright {
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #F29222;
+}
+
+.copyright p {
+    color: #111;
+}
+
+.copyright a {
+    color: #111;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+

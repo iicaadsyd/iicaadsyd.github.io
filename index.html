@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana Latihan</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- HEADER / Navbar -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assests/hacktiv8-dark.webp" alt="Logo_Hacktiv8">
+        </a>
+        <div class="menuToggle" onclick="menuToggle()"></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#homePage">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#program">Programs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page -->
+    <section class="homePage" id="homePage">
+        <div class="content">
+            <h2>Hacktiv<span>8</span></h2>
+            <p>Holaa, this website created by Irsyad</p>
+            <a href="#program" class="btn">Our Programs</a>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="about">
+        <div class="row">
+            <div class="col">
+                <h2 class="title-text">About Us</h2>
+                <p>Coding Bootcamp Pertama di Asia yang Tergabung dalam CIRR
+                    Council on Integrity in Results Reporting (CIRR) adalah standar yang dikembangkan oleh sekelompok
+                    besar sekolah coding
+                    yang percaya bahwa transparansi dalam memberikan hasil belajar kepada calon siswa adalah hal yang
+                    sangat penting.</p>
+                <br>
+                <p>JavaScript has been around for over 20 years. It is the dominant programming language in web
+                    development.
+
+                    In the beginning JavaScript was a language for the web client (browser). Then came the ability to
+                    use JavaScript on the
+                    web server (with Node.js).
+
+                    Today the hottest buzzword is "Full Stack JavaScript".
+
+                    The idea of "Full Stack JavaScript" is that all software in a web application, both client side and
+                    server side, should
+                    be written using JavaScript only.</p>
+                <br>
+                <p>Full Stack JavaScript Developer
+                    A full stack JavaScript developer is a person who can develop both client and server software.
+
+                    In addition to mastering HTML and CSS, he/she also knows how to:
+
+                    Program a browser (like using JavaScript, jQuery, Angular, or Vue)
+                    Program a server (like using Node.js)
+                    Program a database (like using MongoDB)</p>
+            </div>
+            <div class="col">
+                <div class="imgbox">
+                    <img src="assests/about.jpg" alt="about">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION ABOUT US -->
+
+    <!-- Programs -->
+    <section class="program" id="program">
+        <div class="title-program">
+            <h2>Our Programs</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="assests/Data-Science.jpg" alt="dataScience">
+                </div>
+                <div class="text">
+                    <h3>Data Science Class</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="assests/JavaScript.png" alt="dataScience">
+                </div>
+                <div class="text">
+                    <h3>FSJS Immersive</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="assests/digital-marketing.jpg" alt="dataScience">
+                </div>
+                <div class="text">
+                    <h3>Digital Marketing Class</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="title-program">
+            <a href="#" class="btn">View All</a>
+        </div>
+    </section>
+    <!-- END SECTION PROGRAMS -->
+
+    <!-- Copyright -->
+    <footer>
+        <div class="copyright">
+            <p>copyright @2022
+                <a href="https://www.hacktiv8.com">HACKTIV8</a>. All Right Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // header sticky menu
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        //button toggle
+        function menuToggle() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
